@@ -148,7 +148,8 @@ print("un nuevo valor agreagado\n",miDiccionarioVariado);
 #removiendo un item del diccionario 
 del miDiccionarioVariado["one"];
 print("se borro del diccionario\
-      el item: one\n",miDiccionarioVariado);      
+      el item: one\n",miDiccionarioVariado);   
+      
                       
 
 
