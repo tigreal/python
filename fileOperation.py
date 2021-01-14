@@ -1,10 +1,10 @@
-f=open('myfile.txt','r')
-firstline = f.readline()
+f=open('myoutputfile.txt','r')
+firstline = open('myoutputfile.txt','r')
 
-secondline = f.readline()
+for i in  firstline:
+    print(i);
+    
+firstline.close();
 
-print (firstline)
 
-print (secondline)
-f.close()
 

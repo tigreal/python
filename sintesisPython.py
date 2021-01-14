@@ -152,6 +152,103 @@ print("se borro del diccionario\
       
                       
 
+#myName = input("por favor ingrese su nombre:");
+#myAge= input("por favor ingrese su edad:");
+#print("hola mundo, my nombre es",myName, "y tengo ",myAge,"anos");
+#cuando se coloca una r delante de la cadena
+#esto es tomado como cadena crudirijilla
+#print(r"\n \t");
+
+#estructuras de control de flujo
+#las que conocemos todos if, for, while etc mas 
+#try y except
+
+#el operador NOT  devuelve true cuando
+#la condicion despues de NOT es falsa
+
+#el if de una sola fila puede ser muy util
+#over 3 version do not run print (“This is task A” if myInt == 10 else “This is task B”)
+
+#no corre sobre la version 3 de phyton 
+#mascotas = ["gato","perro","chancho"];
+#for(misMascotas in mascotas){
+#    print(misMascotas);}
+#funcion de rango
+rango=range(5,10,2);
+print("imprime desde el 0 al 5  \n:",rango);
+
+for i in range(5):
+    print(i);
+#el bucle while itera siempre y cuando sea verdadera 
+#la condicion y tiene un contador el cual mide
+#el nuemro de iteraciones
+#while counter > 0:
+#print (“Counter = “, counter);
+#counter = counter - 1   
+
+#para romper un bucle y sus interaciones
+#se utiliza  break
+
+#tambien es muy utilizada la palabra clave
+#continue despues de esta palabra todo sera saltado
+#en esta iteracion saltandose esa iteracion  y pasnado
+#a la siguiente
+
+try:
+    userInput1 = int(input("porfavor ingrese un numero"));
+    userInput2 = int(input("porfavor ingrese otro nuemro:"));
+    respuesta= userInput1/userInput2;
+    print("la respuesta se\n:",respuesta);
+    myFile = open("missing.txt",'r');
+except ValueError:
+    print ("eroor: no introdujiste un nuemro");
+except ZeroDivisionError:
+        print("no se puede hacer una diviion en zero");
+except Exception as e:
+        print("error desconocido",e);        
+    
+#funciones en pytho son igual a otras pero la sintaxis
+#es diferente 
+#para definir una funcin se necesita la palabra clave
+#def y tambien se acompana de return 
+def checkIfPrime(numberToCheck):
+    for x in range(2,numberToCheck):
+        if(numberToCheck%x == 0):
+            return False
+        return True
+    
+respuesta = checkIfPrime(12)   
+print(respuesta); 
+        
+#es importante entender el alcance de las variables 
+#cuando se utiliza funciones 1 una variable declarada
+#dentro de una funcion solo es accesible dentro de
+#la funcion seria una variable local
+#una variable declarada fuera de la funcion seria
+#una varibale global
+message1= "variable global"
+def myFunction():
+    print("\ndentro de la funcion")
+    #mostrando la variable global
+    print(message1);
+    #definiendo la variable local
+    message2 = "variable local"
+    print(message2)
+    
+    
+myFunction();
+#para utilizar modulos de terceros
+#se utiliza la palabra clave import
+#import randrange()
+#para crear nuestros propios modulos solo hay
+#que guardarlos en un nuevo archivo con la extencion .py
+#e importarlo de la misma forma
+
+
+    
+    
+
+
 
 
 

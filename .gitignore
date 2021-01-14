@@ -1,0 +1,10 @@
+config/
+history.py
+history_internal.py
+langconfig
+onlinehelp
+pdb_history.sqlite
+spyder.lock/
+temp.py
+template.py
+workingdir 
