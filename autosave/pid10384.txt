@@ -1,0 +1,1 @@
+{'C:\\Users\\Monitoreo\\.spyder-py3\\ExeciceMathandBODMAS\\myPythonFunctions.py': 'C:\\Users\\Monitoreo\\.spyder-py3\\autosave\\myPythonFunctions.py'}

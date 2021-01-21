@@ -8,4 +8,10 @@ import os; #obtenemos remove() rename()
 #definimos nuestra primera funcion 
 #esta funcion obtenddra puntos del usuario guardados en
 #un archivo de texto
-obtenerUsuarioPuntos(nombreUsuario)
+nombreUsuario="nada";
+str x;
+x=obtenerUsuarioPuntos(nombreUsuario);
+
+def obtenerUsuarioPuntos(nombreUsuario):
+    return 0
+
