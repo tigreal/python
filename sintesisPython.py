@@ -244,9 +244,24 @@ myFunction();
 #que guardarlos en un nuevo archivo con la extencion .py
 #e importarlo de la misma forma
 
+userInput = input('Enter 1 or 2: ');
+
+ 
+
+if userInput == "1":
+
+    print ("Hello World");
 
     
+
+elif userInput == "2":
+
+    print ("Python Rocks!")
+
     
+else:
+
+    print ("You did not enter a valid number");
 
 
 
