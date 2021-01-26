@@ -1,3 +1,0 @@
-osmar,45
-jorge,100
-ruben,55

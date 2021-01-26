@@ -1,3 +1,3 @@
-osmar,45
-jorge,35
-ruben,55
+osmar,200
+jorge,100
+ruben,100

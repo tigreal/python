@@ -1,4 +1,3 @@
-
 nombres = open('userScores.txt', 'r')
 
 numero = 0

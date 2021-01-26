@@ -4,6 +4,21 @@
 import random  # obtenemos randint()
 import os  # obtenemos remove() rename()
 
+#definiendo las dos listas
+operandList=[0,0,0,0,0] 
+operatorList=['','','','','']
+operatorDict={1:'+',2:'-',3:'*',4:'**'}
+print(operatorDict)
+for index in  range(0,5):
+    operandList[index]=random.randint(1,9)
+    print(operandList[index])
+    
+    
+    
+    
+
+
+
 def obtenerUsuarioPuntos(nombreUsuario):
     
     nombres = open('userScores.txt', 'r')
@@ -19,6 +34,7 @@ def obtenerUsuarioPuntos(nombreUsuario):
         
            
     #i=+i
+    nombres.close()
 
 def actulizarPuntosUsuario(usuarioNuevo,nombreUsuario,puntaje):
     #la funcion agregar funciona de maravilla
@@ -41,7 +57,10 @@ def actulizarPuntosUsuario(usuarioNuevo,nombreUsuario,puntaje):
                 if res[0]==nombreUsuario:
                         #print("es true",res[e])
                         scoresTemp.write(nombreUsuario+","+puntaje+"\n")
+                        
                 else:
+                        
+                  
                         scoresTemp.write(registro)
                         
                 e=e+1
@@ -50,7 +69,8 @@ def actulizarPuntosUsuario(usuarioNuevo,nombreUsuario,puntaje):
             
             scores.close()
             scoresTemp.close()
-            
+            os.remove('userScores.txt')
+            os.rename('userScoresTemp.txt','userScores.txt')
                                
                 
     
@@ -61,7 +81,7 @@ def actulizarPuntosUsuario(usuarioNuevo,nombreUsuario,puntaje):
 # un archivo de texto
 
 
-actulizarPuntosUsuario(False,"jorge","100")
+actulizarPuntosUsuario(False,"osmar","200")
 
 
 
