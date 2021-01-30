@@ -11,9 +11,39 @@ operatorDict={1:'+',2:'-',3:'*',4:'**'}
 print(operatorDict)
 for index in  range(0,5):
     operandList[index]=random.randint(1,9)
-    print(operandList[index])
+    #print(operandList[index])
+    
+
+bandera=1    
+for index in range(0,5):
     
     
+    if operatorList[index]!='**':
+        operatorList[index]=operatorDict[random.randint(1,4)]
+        print("distinto",operatorList[index])
+        
+    elif operatorList[index]=='**' and bandera<2:
+            operatorList[index]=operatorDict[random.randint(1,4)]
+            bandera=bandera+1
+            print("igual",operatorList[index])
+            print("bandera",bandera)
+            
+    else:
+        operatorList[index]=operatorDict[1]
+        print("else",operatorList[index])
+        
+        
+
+        
+            
+        
+    
+        
+    
+        
+    
+    
+       
     
     
 
