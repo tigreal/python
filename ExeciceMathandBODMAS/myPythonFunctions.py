@@ -8,46 +8,46 @@ import os  # obtenemos remove() rename()
 operandList=[0,0,0,0,0] 
 operatorList=['','','','','']
 operatorDict={1:'+',2:'-',3:'*',4:'**'}
-print(operatorDict)
+questionString=['','','','',''];
+#print(operatorDict)
 for index in  range(0,5):
     operandList[index]=random.randint(1,9)
     #print(operandList[index])
     
 
 bandera=1    
-for index in range(0,5):
+for index in range(0,4):
     
     
-    if operatorList[index]!='**':
-        operatorList[index]=operatorDict[random.randint(1,4)]
-        print("distinto",operatorList[index])
+    primerElemento=operatorDict[random.randint(1,4)]
+    #print("if",primerElemento)
+    if primerElemento!='**':
+        operatorList[index]=primerElemento
+     #   print("distinto",operatorList[index])
         
-    elif operatorList[index]=='**' and bandera<2:
-            operatorList[index]=operatorDict[random.randint(1,4)]
+    elif primerElemento=='**' and bandera<2:
+      #      print("ifelse",primerElemento)        
+            operatorList[index]=primerElemento
             bandera=bandera+1
-            print("igual",operatorList[index])
-            print("bandera",bandera)
+       #     print("igual",operatorList[index])
+        #    print("bandera",bandera)
             
     else:
         operatorList[index]=operatorDict[1]
-        print("else",operatorList[index])
+        #print("else",operatorList[index])
         
         
-
-        
-            
-        
-    
-        
-    
-        
-    
-    
-       
+#generar la expresion matematica
+res='';
+for index in range(0,5):
+    #print(operandList[index])
+    #print(operatorList[index])
+    contatenado=str(operandList[index])+str(operatorList[index])
+    res+=contatenado
+print(res)
+print(eval(res))
     
     
-
-
 
 def obtenerUsuarioPuntos(nombreUsuario):
     
