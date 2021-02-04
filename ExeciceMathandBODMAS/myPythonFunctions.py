@@ -38,6 +38,9 @@ for index in range(0,4):
         
         
 #generar la expresion matematica
+#concatenamos las cadenas
+#y adicionamos en una variable
+
 res='';
 for index in range(0,5):
     #print(operandList[index])
